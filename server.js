@@ -15,6 +15,10 @@ const chatkit = new Chatkit.default({
 	key: "0fef78de-bb3c-4e7c-b848-33d203c10d7d:+CNzELunh8E8V73alok5gAyBn3Rt8LPA9RgvPpCPC0g="
 })
 
+app.get('/', (req, res) => {
+	res.send('The server is running.')
+})
+
 app.post('/users', (req, res) => {
 	const { username } = req.body;
 
